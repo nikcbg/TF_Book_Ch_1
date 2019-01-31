@@ -8,12 +8,9 @@
 - `terraform_webserver.tf` - `terraform` configuration code that deploys webserver. 
 
 
-
-
-
 ### How to run each of the files in the repository:
 
-- **running the bash script file:**
+- **running the `bash` script file:**
   - execute `bash bash_webserver.sh` command (this script should be run on Ubuntu server)
   - the script updates apt-get cache, installs PHP and Apache, copy code form repository and starts Apache server.
   
@@ -29,12 +26,21 @@
       export AWS_SECRET_ACCESS_KEY=(your secret access key)
       ```
   - execute `packer validate packer_webserver.json` - to validate the syntax and configuration of the template.
-  - exacute `packer build packer_webserver.json` -  to start building the VM image.
+  - execute `packer build packer_webserver.json` -  to start building the VM image.
   
-  
-  
-
-
+- **running the `terraform` cinfiguration file:**
+  - **pre-requisites**
+    - first you need to install `Terraform` from [here](https://www.terraform.io/downloads.html)
+    - next you need to setup Amazon Web Services (AWS) account [here](https://aws.amazon.com/)
+    - next you need to configure your AWS access keys [here](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)
+    - lastly you need to configure your AWS access keys as environment variables:
+      ```
+      export AWS_ACCESS_KEY_ID=(your access key id)
+      export AWS_SECRET_ACCESS_KEY=(your secret access key)
+      ```
+  - execute terraform init - to initialize the working directory
+  - execute terraform plan - to create execution plan for changes to be applied.
+  - execute terraform apply	- to apply the desired changes.
 
 
 
