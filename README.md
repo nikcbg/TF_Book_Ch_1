@@ -28,7 +28,15 @@
       ```
   - execute `packer validate packer_webserver.json` - to validate the syntax and configuration of the template.
   - execute `packer build packer_webserver.json` -  to start building the VM image.
+  
+  - if the commands succeed the output should diplay the following:
+  ```
+   Build 'amazon-ebs' finished.
 
+   ==> Builds finished. The artifacts of successful builds are:
+   --> amazon-ebs: AMIs were created:
+   us-east-1: ami-0123abcd456dsds34
+  ```
 ------------------------------------------------------------------------------------------------------------------
 #### Running the `terraform` configuration file:
   - **pre-requisites**
@@ -43,3 +51,23 @@
   - execute `terraform init` - to initialize the working directory
   - execute `terraform plan` - to create execution plan for changes to be applied.
   - execute `terraform apply`	- to apply the desired changes.
+  
+  - if the commands succeed the output should diplay the following:
+  ```
+   aws_instance.app: Creation complete after 42s (ID: i-057dca7b92711929f)
+
+   Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+  ```
+  
+ - execute `terraform destroy` - to destroy the resource that we just created.
+
+ - if the command succeeds the output should diplay the following:
+  ```
+   aws_instance.app: Destruction complete after 1m52s
+
+    Destroy complete! Resources: 1 destroyed.
+  ```
+
+
+  
