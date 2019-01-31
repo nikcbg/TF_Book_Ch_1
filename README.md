@@ -10,13 +10,13 @@
 
 ### How to run each of the files in the repository:
 
- #### Running the `bash` script file:**
+ #### Running the `bash` script file:
   - execute `bash bash_webserver.sh` command (this script should be run on Ubuntu server)
   - the script updates apt-get cache, installs PHP and Apache, copy code form repository and starts Apache server.
   
 ---------------------------------------------------------------------------------------------------------------------------
 
-#### Running the `packer` template file:**
+#### Running the `packer` template file:
   - **pre-requisites**
     - first you need to install `packer` from [here](https://www.packer.io/)
     - next you need to setup Amazon Web Services (AWS) account [here](https://aws.amazon.com/)
@@ -30,9 +30,9 @@
   - execute `packer build packer_webserver.json` -  to start building the VM image.
 
 ------------------------------------------------------------------------------------------------------------------
-#### Running the `terraform` configuration file:**
+#### Running the `terraform` configuration file:
   - **pre-requisites**
-    - first you need to install `Terraform` from [here](https://www.terraform.io/downloads.html)
+    - first you need to install `terraform` from [here](https://www.terraform.io/downloads.html)
     - next you need to setup Amazon Web Services (AWS) account [here](https://aws.amazon.com/)
     - next you need to configure your AWS access keys [here](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)
     - lastly you need to configure your AWS access keys as environment variables:
