@@ -66,7 +66,7 @@
   ```
    aws_instance.app: Destruction complete after 1m52s
 
-    Destroy complete! Resources: 1 destroyed.
+   Destroy complete! Resources: 1 destroyed.
   ```
 
 
