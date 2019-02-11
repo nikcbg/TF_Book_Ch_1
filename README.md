@@ -2,6 +2,9 @@
 
 #### Note: This is the first of series of repositories for "Terraform Up & Running" book. I will have a separate repository for each chapter. Each repository will have files with Terraform (or other tools that are discussed in the book) code and README.md with expalnation what the repository does. 
 
+#### Please note that all examples will deploy real resources into your AWS account, I am not responsible for any charges you may incur.
+
+
 ### List of files in the repository:
 - `bash_webserver.sh` - bash script that installs and configures webserver. 
 - `packer_webserver.json` - `packer` template code that creates VM image with webserver on it.
