@@ -68,5 +68,5 @@
 
    Destroy complete! Resources: 1 destroyed.
   ```
- ### Double check in your AWS account that the resources you just created are destroyed/deleted so you don't get charged for resources taht are left running.
+ ### Double check in your AWS account that the resources you just created are destroyed so you don't get charged for resources that are left running.
   
